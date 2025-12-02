@@ -1,4 +1,4 @@
-library(dplyr)
+library(numbers)
 setwd("~/portfolio/AoC_2025/")
 
 #read in data
@@ -35,14 +35,11 @@ for(range in input) {
         print(n)
       }
     }
-    
-    
   }
 }
 
 ##Answer 1 -------------------------------------------------------------------------
 sum
-
 
 
 ##Question 2 -----------------------------------------------------------------------
@@ -72,7 +69,7 @@ check_rep <- function(n) {
   return(to_return)
 }
 
-#run program similar to above
+#run program similar Question 1
 sum <- 0
 collect_values <- c()
 
@@ -92,11 +89,10 @@ for(range in input) {
       sum <- sum + n
     }
   }
-    
 }
 
 ##Answer 2 -------------------------------------------------------------------------
-#numbers 1:9 are divisible my themselves and end up wrongly counted
+#numbers 1:9 are divisible by themselves and end up wrongly counted
 sum - sum(1:9)
 
 #or
